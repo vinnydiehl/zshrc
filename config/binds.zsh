@@ -9,3 +9,6 @@ lfcd () {
     fi
 }
 bindkey -s "^o" "lfcd\n"
+
+# <C-Space> to accept suggestion
+bindkey "^ " autosuggest-accept
