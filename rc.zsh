@@ -20,7 +20,7 @@ precmd() {
   else
     local git_ps1_branch_color=red
   fi
-  local git_ps1=$(__git_ps1 "%%{$fg[blue]%%}(%%{$fg[$git_ps1_branch_color]%%}%s%%{$fg[blue]%%}) ")
+  local git_ps1=$(__git_ps1 "%%{$fg[yellow]%%} %%{$fg[$git_ps1_branch_color]%%}%s ")
 
   PS1+=" %{$fg[cyan]%}%1~ $git_ps1%{$fg[yellow]%} %{$reset_color%}"
 }
