@@ -35,6 +35,8 @@ alias psql="sudo -u postgres psql"
 # Clipboard CLI commands
 alias c="xclip -selection clipboard"
 alias v="xclip -selection clipboard -o"
+alias pc="xclip -selection primary"
+alias pv="xclip -selection primary -o"
 
 # Package managers
 alias pms="sudo pacman -S"
