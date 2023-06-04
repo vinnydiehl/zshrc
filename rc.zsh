@@ -41,10 +41,12 @@ _comp_options+=(globdots)
 eval "$(rbenv init - zsh)"
 
 # Rust
-source $HOME/.cargo/env
+if [ -r $HOME/.cargo/env ]; then source $HOME/.cargo/env; fi
 
 # Source keys
-source "$HOME/.config/export_keys.sh"
+if [ -r $HOME/.config/export_keys.sh ]; then
+  source $HOME/.config/export_keys.sh
+fi
 
 # Recursively source all .zsh files in config/
 for f (~/.config/zsh/config/**/*.zsh(N.)) . $f
