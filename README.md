@@ -26,6 +26,12 @@ ln -s ~/.config/zsh/rc.zsh ~/.zshrc
 ln -s ~/.config/zsh/env.zsh ~/.zshenv
 ```
 
+Make a cache directory:
+
+```sh
+mkdir -p ~/.cache/zsh
+```
+
 Source the config:
 
 ```sh
