@@ -47,6 +47,7 @@ alias uall="pmu && auru && sudo snap refresh"
 
 # Shell shit
 alias ls="ls --color=auto"
+alias grep="grep --color=auto"
 alias tt="gio trash"
 alias hd="hexdump -CL"
 alias cpr="cp -r"
