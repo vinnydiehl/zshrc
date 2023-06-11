@@ -5,7 +5,8 @@ far.
 
 ## Install
 
-Remove/backup any existing `~/.zshrc`/`.zshenv` files or `~/.config/zsh/` directory.
+Remove/backup any existing `~/.zshrc`/`.zprofile`/`.zshenv` files and
+`~/.config/zsh/` directory.
 
 Clone this repository:
 
@@ -19,10 +20,11 @@ Install [zplug](https://github.com/zplug/zplug):
 curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 ```
 
-Create 2 symlinks:
+Create 3 symlinks:
 
 ```sh
 ln -s ~/.config/zsh/rc.zsh ~/.zshrc
+ln -s ~/.config/zsh/profile.zsh ~/.zprofile
 ln -s ~/.config/zsh/env.zsh ~/.zshenv
 ```
 
