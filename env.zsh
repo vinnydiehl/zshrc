@@ -9,8 +9,3 @@ LC_ALL=en_US.UTF-8
 DEVKITPRO=/opt/devkitpro
 DEVKITARM=/opt/devkitpro/devkitARM
 DEVKITPPC=/opt/devkitpro/devkitPPC
-
-# Dark theme for apps
-GTK_THEME=Adwaita:dark
-GTK2_RC_FILES=/usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc
-QT_STYLE_OVERRIDE=adwaita-dark
