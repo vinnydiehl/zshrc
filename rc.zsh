@@ -51,3 +51,6 @@ fi
 
 # Recursively source all .zsh files in config/
 for f (~/.config/zsh/config/**/*.zsh(N.)) . $f
+
+# Source keybinds last
+source ~/.config/zsh/binds.zsh
