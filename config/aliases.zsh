@@ -56,3 +56,6 @@ alias cls="clear && ls"
 
 # YouCompleteMe ctag generation
 alias ycmtags="ctags -R --fields=+l *"
+
+# Mozilla Build
+alias mach="./mach"
