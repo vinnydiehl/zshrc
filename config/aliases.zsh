@@ -42,7 +42,7 @@ alias pv="xclip -selection primary -o"
 alias pms="sudo pacman -S"
 alias pmu="sudo pacman -Syu"
 alias aur="sudo aura -A"
-alias auru="sudo aura -Ayu"
+alias auru="yes | sudo aura -Ayu"
 alias uall="pmu && auru && sudo snap refresh"
 
 # Shell shit
