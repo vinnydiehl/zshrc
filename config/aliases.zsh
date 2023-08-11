@@ -56,12 +56,3 @@ alias cls="clear && ls"
 
 # YouCompleteMe ctag generation
 alias ycmtags="ctags -R --fields=+l *"
-
-# Mozilla Build
-alias mach="./mach"
-alias mozcompiledb="./mach build-backend --backend=CompileDB"
-alias mozcr="./mach build && ./mach run"
-alias mozdevcr="./mach build && ./mach run -P dev"
-alias mozfastcr="./mach build faster && ./mach run -P dev"
-alias mozlint="./mach lint --outgoing"
-alias mozpush="./mach lint --outgoing --fix && moz-phab"
