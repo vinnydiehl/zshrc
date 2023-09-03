@@ -56,3 +56,6 @@ alias cls="clear && ls"
 
 # YouCompleteMe ctag generation
 alias ycmtags="ctags -R --fields=+l *"
+
+# Upload file for single use download
+alias bashupload="curl bashupload.com -T"
