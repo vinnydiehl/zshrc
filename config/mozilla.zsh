@@ -1,5 +1,6 @@
 mozcompiledb() {
   if cat mozconfig | grep -q '^ac_add_options.*nightly'; then
+    ./mach configure
     ./mach build-backend --backend=CompileDB
     mv obj-x86_64-pc-linux-gnu/compile_commands.json .
   else
