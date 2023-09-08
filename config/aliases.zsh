@@ -28,6 +28,7 @@ alias pull="git pull --rebase"
 alias rb="git rebase"
 alias gst="git status"
 alias gca="git add . && git commit"
+alias gpr="git pull --rebase"
 
 # PostgreSQL
 alias psql="sudo -u postgres psql"
