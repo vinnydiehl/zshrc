@@ -4,6 +4,8 @@ alias so="source ~/.config/zsh/rc.zsh"
 # Allow aliases with sudo
 alias sudo="sudo "
 
+alias wifi="nmtui"
+
 alias vi=nvim
 alias vim=nvim
 alias suvi="sudo nvim"
