@@ -9,3 +9,6 @@ LC_ALL=en_US.UTF-8
 DEVKITPRO=/opt/devkitpro
 DEVKITARM=/opt/devkitpro/devkitARM
 DEVKITPPC=/opt/devkitpro/devkitPPC
+
+# Android
+ANDROID_HOME=/opt/android-sdk
