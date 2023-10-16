@@ -8,6 +8,15 @@ mozcompiledb() {
   fi
 }
 
+# Update central and rebase your current branch onto it
+mozrebase() {
+  branch=$(git branch --show-current)
+  git checkout bookmarks/central
+  git pull --rebase
+  git checkout $branch
+  git rebase bookmarks/central
+}
+
 alias mach="./mach"
 alias mozcr="./mach build && ./mach run"
 alias mozdevcr="./mach build && ./mach run -P dev"
