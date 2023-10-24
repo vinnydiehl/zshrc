@@ -8,6 +8,23 @@ mozcompiledb() {
   fi
 }
 
+mozinstall() {
+  if ! cat mozconfig | grep -q '^ac_add_options --enable-artifact-builds'; then
+    echo -n "You aren't using an artifact build! Are you sure you want to continue? "
+    read -q
+    echo
+    if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+      echo "Cancelling."
+      return 0
+    fi
+  fi
+
+  sudo echo "Logged in." &&
+    ./mach build &&
+    sudo ./mach install &&
+    sudo rm -rf obj-artifact*
+}
+
 # Update central and rebase your current branch onto it
 mozrebase() {
   branch=$(git branch --show-current)
