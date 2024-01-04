@@ -34,6 +34,7 @@ setopt SHARE_HISTORY
 # Auto/tab complete
 autoload -U compinit
 zstyle ":completion:*" menu select
+zstyle ":completion:*" completer _complete _correct _approximate
 zmodload zsh/complist
 compinit
 _comp_options+=(globdots)
