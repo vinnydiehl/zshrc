@@ -62,3 +62,7 @@ alias ycmtags="ctags -R --fields=+l *"
 
 # Upload file for single use download
 alias bashupload="curl bashupload.com -T"
+
+# HDMI
+alias hdmi-left="xrandr --output HDMI-1-0 --auto --left-of eDP-1"
+alias hdmi-right="xrandr --output HDMI-1-0 --auto --right-of eDP-1"
